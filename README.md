@@ -1,4 +1,5 @@
 # Sesiones-PHP
+![](img/demo.png)
 
 1. En registro PHP
 
