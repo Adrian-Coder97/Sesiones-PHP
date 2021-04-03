@@ -6,23 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
 
-<body>
-    <h3>REGISTRO USUARIOS</h3>
-    <form action="agregar_usuario.php" method="POST">
-        <input type="text" name="nombre_usuario" placeholder="Ingresa usuario">
-        <input type="text" name="contrasena" placeholder="Ingresa contraseña">
-        <input type="text" name="contrasena2" placeholder="Ingresa contraseña nuevamente">
-        <button type="submit">Guardar</button>
-    </form>
+<body class="bg-light">
 
-    <h3>LOGIN</h3>
-    <form action="login.php" method="POST">
-        <input type="text" name="nombre_usuario" placeholder="Ingresa usuario">
-        <input type="text" name="contrasena" placeholder="Ingresa contraseña">
-        <button type="submit">Guardar</button>
-    </form>
+    <div class="container border p-3 mt-3 bg-white">
+        <h3>Registrarse</h3>
+            <form action="agregar_usuario.php" method="POST" class="d-flex flex-column justify-content-center align-items-center">
+                <input type="text" name="nombre_usuario" placeholder="Ingresa usuario" class="form-control p-3 mt-2">
+                <input type="text" name="contrasena" placeholder="Ingresa contraseña" class="form-control p-3 mt-2">
+                <input type="text" name="contrasena2" placeholder="Ingresa contraseña nuevamente" class="form-control p-3 mt-2">
+                <button type="submit" class="btn btn-success mt-2 w-75">Registrarse</button>
+            </form>
+    </div>
+
+
+    <div class="container border p-3 mt-3 bg-white">
+        <h3>Iniciar Sesion</h3>
+        <form action="login.php" method="POST" class="d-flex flex-column justify-content-center align-items-center">
+            <input type="text" name="nombre_usuario" placeholder="Ingresa usuario" class="form-control p-3 mt-2">
+            <input type="text" name="contrasena" placeholder="Ingresa contraseña" class="form-control p-3 mt-2">
+            <button type="submit" class="btn btn-primary mt-2 w-75">Ingresar</button>
+        </form>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
